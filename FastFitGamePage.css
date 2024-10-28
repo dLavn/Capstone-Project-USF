@@ -1,0 +1,186 @@
+.fastfit-container {
+  background-color: #d0f4de;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.back-home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #6fcf97;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.back-home-button:hover {
+  background-color: #57a773;
+  transform: scale(1.1);
+}
+
+/* Title with animation */
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+p:nth-child(2) {
+  font-weight: bold;
+  color: #57a773;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse effect on the timer */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    color: #57a773;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #6fcf97;
+  }
+}
+
+/* Add a fun animation to the exercise text */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+p:nth-child(3) {
+  animation: slideIn 0.5s ease-out;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Completed exercise count with bounce animation */
+p:nth-child(4) {
+  font-size: 2rem;
+  color: #57a773;
+  font-weight: bold;
+  animation: bounce 1s infinite;
+}
+
+/* Bounce effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Buttons with hover effects and animations */
+button {
+  background-color: #6fcf97;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+button:hover {
+  background-color: #57a773;
+  transform: translateY(-5px);
+}
+
+.finish-workout-button {
+  background-color: #6fcf97;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.finish-workout-button:hover {
+  background-color: #57a773;
+  transform: translateY(-5px);
+}
+
+.float-element {
+  position: absolute;
+  background-color: #6fcf97;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-1 {
+  top: 10%;
+  left: 20%;
+}
+
+.float-2 {
+  top: 50%;
+  right: 10%;
+}
+
+.float-3 {
+  bottom: 20%;
+  left: 40%;
+}
+

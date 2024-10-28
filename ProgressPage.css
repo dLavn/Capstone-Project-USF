@@ -1,0 +1,70 @@
+.progress-page {
+    background-color: #e8f5e9;
+    min-height: 100vh;
+}
+
+.progress-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.progress-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Position and style the individual sections */
+.current-goals {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.completed-goals {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.progress-chart {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.fastfit-chart {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.current-goals, .completed-goals, .progress-chart, .fastfit-chart {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style text and other elements */
+.current-goals h2, .completed-goals h2, .progress-chart h2, .fastfit-chart h2 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.current-goals ul, .completed-goals ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.current-goals li, .completed-goals li {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.current-goals li:hover, .completed-goals li:hover {
+    background-color: #a5d6a7;
+}

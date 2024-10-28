@@ -3,7 +3,6 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(100),
     last_name VARCHAR(100),
-    date_of_birth DATE,
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -27,7 +26,7 @@ CREATE TABLE exercises (
     muscle_group VARCHAR(100),
     sets INT DEFAULT 3,
     reps INT DEFAULT 10,
-    weight INT DEFAULT 0 -- optional: if tracking weight for exercises
+    weight INT DEFAULT 0
 );
 
 -- Goals Table
